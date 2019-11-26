@@ -1,0 +1,23 @@
+{
+  "name": "allaroundme",
+  "version": "1.0.0",
+  "description": "Love letters",
+  "main": "index.js",
+  "dependencies": {
+    "socket.io": "^2.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chiaski/allaroundme.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chiaski/allaroundme/issues"
+  },
+  "homepage": "https://github.com/chiaski/allaroundme#readme"
+}
