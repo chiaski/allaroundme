@@ -1,12 +1,8 @@
 {
   "name": "allaroundme",
   "version": "1.0.0",
-  "description": "Love letters",
+  "description": "The radical act of being loved! for [https://itch.io/jam/correspondence-jam](#correspondencejam)",
   "main": "index.js",
-  "dependencies": {
-    "socket.io": "^2.3.0"
-  },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -19,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/chiaski/allaroundme/issues"
   },
-  "homepage": "https://github.com/chiaski/allaroundme#readme"
+  "homepage": "https://github.com/chiaski/allaroundme#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "p5": "^0.10.2",
+    "socket.io": "^2.3.0"
+  }
 }
