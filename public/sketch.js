@@ -2,6 +2,7 @@ let socket
 let color = '#FFF'
 let strokeWidth = 4
 
+
 function setup() {
 	// Creating canvas
 	const cv = createCanvas(800, 600)
@@ -67,3 +68,4 @@ function sendmouse(x, y, pX, pY) {
 
 	socket.emit('mouse', data)
 }
+
