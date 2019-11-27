@@ -2,9 +2,9 @@ const http = require('http')
 const express = require('express')
 
 
-const app = express()
-app.use(express.static('public'))
+const app = express();
 
+app.use(express.static('public'))
 app.set('port', '3000')
 
 
@@ -13,9 +13,9 @@ server.on('listening', () => {
  console.log('Listening on port 3000')
 })
 
-/* WEB SOCKETS */
+/* SOCKETS */
 
-const io = require('socket.io')(server)
+const io = require('socket.io').listen(server)
 
 io.sockets.on('connection', (socket) => {
  console.log('Client connected: ' + socket.id)

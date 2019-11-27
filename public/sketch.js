@@ -5,11 +5,12 @@ let strokeWidth = 4
 function setup() {
 	// Creating canvas
 	const cv = createCanvas(800, 600)
-	cv.position(300, 100)
+	cv.position(200, 50)
 	cv.background(0)
 
 	// Start the socket connection
-	socket = io.connect('http://localhost:3000')
+    // var socket = io.connect("https://chia.dev/code/allaroundme:3000");
+	socket = io.connect("130.132.173.78:3000");
 
 	// Callback function
 	socket.on('mouse', data => {
