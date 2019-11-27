@@ -5,7 +5,7 @@ const express = require('express')
 const app = express();
 
 app.use(express.static('public'))
-app.set('port', '3000')
+app.set('port', process.env.PORT || 5000)
 
 
 const server = http.createServer(app)
@@ -23,4 +23,4 @@ io.sockets.on('connection', (socket) => {
  socket.on('disconnect', () => console.log('Client has disconnected'))
 })
 
-server.listen('3000')
+server.listen(process.env.PORT || 5000) // .listen('3000')
