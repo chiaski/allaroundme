@@ -10,7 +10,7 @@ function setup() {
 
 	// Start the socket connection
     // var socket = io.connect("https://chia.dev/code/allaroundme:3000");
-	socket = io.connect("130.132.173.78:3000");
+	socket = io.connect(); //("130.132.173.78:3000");
 
 	// Callback function
 	socket.on('mouse', data => {
